@@ -1,0 +1,2 @@
+# animation-examples
+Some examples created to demonstrate features of the Firefox devtools Animation Inspector. See [https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Work_with_animations#Further_information_about_animation_compositing](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Work_with_animations#Further_information_about_animation_compositing) for more details
