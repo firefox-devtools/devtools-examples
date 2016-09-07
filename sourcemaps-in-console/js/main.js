@@ -1,22 +1,15 @@
-function makeGreeting() {
-  var user = document.getElementById('user');
-  console.log("user is: " + user.value);
-  var greeting = "Hi, " + user.value + "!";
-  return greeting;
+var message = document.getElementById('message');
+
+function logMessage() {
+  console.log("message is: " + message.value);
 }
 
-var user = document.getElementById('user');
-user.addEventListener("focus", function() {
-  var user = document.getElementById('user');
-  user.value = "";
-  var welcome = document.getElementById('welcome');
-  welcome.textContent = "";
+message.addEventListener("focus", function() {
+  message.value = "";
 }, false);
 
-var greetme = document.getElementById('greetme');
+var logMessageButton = document.getElementById('log-message');
 
-greetme.addEventListener("click", function() {
-  var welcome = document.getElementById('welcome');
-  welcome.textContent = "";
-  welcome.textContent = makeGreeting();
+logMessageButton.addEventListener("click", function() {
+  logMessage();
 }, false);
