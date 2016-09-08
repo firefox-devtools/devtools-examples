@@ -7,6 +7,33 @@
 
 <body>
 
+<p>This page is a demonstration of source map support in the <a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console">Firefox Web Console</a>.
+</p>
+
+<p>It contains a textbox, a button, and a JavaScript source. When you press the button, the JavaScript source logs the contents of the textbox to the Web Console using <code>console.log()</code>.</p>
+
+<p>We've compressed the JavaScript source using <a href="https://github.com/mishoo/UglifyJS2">Uglify.js</a>, and also generated a source map for it.</p>
+
+<ul>
+  <li><a href="https://wbamberg.github.io/devtools-examples/sourcemaps-in-console/js/main.js">See the original source.</a></li>
+  <li><a href="https://wbamberg.github.io/devtools-examples/sourcemaps-in-console/js/main.min.js">See the compressed source.</a></li>
+  <li><a href="https://wbamberg.github.io/devtools-examples/sourcemaps-in-console/js/main.js.map">See the source map.</a></li>
+</ul>
+
+<p>The message that appears in the console has a link back to the source file. Without source map support, this will link to the compressed source. With source map support, it will link to the original uncompressed source.</p>
+
+<p>
+  To try it out:
+  <ul>
+    <li>Make sure you're using Firefox version 50 or higher.</li>
+    <li>Visit "about:config", and check the value of the "devtools.sourcemap.locations.enabled" preference. If it's <code>false</code>, set it to <code>true</code>.</li>
+    <li>Open the Web Console.</li>
+    <li>Type a message in the textbox, and click the "Log message!" button.</li>
+  </ul>
+</p>
+
+<p>You should see a message in the Web Console, and the link it contains should be to the original source "main.js".</p>
+
   <section id="example">
     <input id ="message" type="text" name="submitButton" value="" />
     <input id ="log-message" type="button" name="submitButton" value="Log message!" />
