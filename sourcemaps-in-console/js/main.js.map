@@ -1,1 +1,10 @@
-{"version":3,"sources":["main.js"],"names":["logMessage","console","log","message","value","document","getElementById","addEventListener","logMessageButton"],"mappings":"AAEA,QAASA,cACPC,QAAQC,IAAI,eAAiBC,QAAQC,OAHvC,GAAID,SAAUE,SAASC,eAAe,UAMtCH,SAAQI,iBAAiB,QAAS,WAChCJ,QAAQC,MAAQ,KACf,EAEH,IAAII,kBAAmBH,SAASC,eAAe,cAE/CE,kBAAiBD,iBAAiB,QAAS,WACzCP,eACC","file":"main.min.js","sourceRoot":"https://wbamberg.github.io/devtools-examples/sourcemaps-in-console/js"}
+{
+  "version": 3,
+  "file": "main.js",
+  "sourceRoot": "",
+  "sources": [
+    "main.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,MAAA,GAAS,QAAQ,CAAC,cAAT,CAAwB,QAAxB;;EAET,KAAA,GAAQ,SAAC,QAAD;WACN,OAAO,CAAC,GAAR,CAAY,QAAA,GAAW,GAAX,GAAiB,MAAM,CAAC,KAApC;EADM;;EAGR,MAAM,CAAC,gBAAP,CAAwB,OAAxB,EAAiC,SAAA;WAAG,MAAM,CAAC,KAAP,GAAe;EAAlB,CAAjC;;EAEA,WAAA,GAAc,QAAQ,CAAC,cAAT,CAAwB,OAAxB;;EAEd,WAAW,CAAC,gBAAZ,CAA6B,OAA7B,EAAsC,SAAA;AACpC,QAAA;IAAA,WAAA,GAAc,QAAQ,CAAC,aAAT,CAAuB,QAAvB;IACd,QAAA,GAAc,WAAW,CAAC,OAAf,GAA4B,OAA5B,GAAyC;WACpD,KAAA,CAAM,QAAN;EAHoC,CAAtC;AATA"
+}
