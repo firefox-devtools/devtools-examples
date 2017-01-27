@@ -15,7 +15,7 @@
   
   <hr/>
 
-<p>This page is a demonstration of source map support in the <a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console">Firefox Web Console</a>.
+<p>This page is a demonstration of source map support in the <a href="https://developer.mozilla.org/en-US/docs/Tools">Firefox Developer Tools</a>.
 </p>
 
 <p>It contains a textbox, two radio buttons labeled "Hello" and "Goodbye", a button labeled "Greet", and a JavaScript source. When you press the button, the JavaScript source takes the contents of the textbox and logs a string to the Web Console using <code>console.log()</code>. The string is "Hello [contents]" or "Goodbye [contents]", depending on which radio button is checked.</p>
@@ -23,25 +23,10 @@
 <p>We wrote the original source using <a href="http://coffeescript.org/">CoffeeScript</a>, and compiled it to JavaScript. We've also generated a source map for it.</p>
 
 <ul>
-  <li><a href="https://raw.githubusercontent.com/wbamberg/devtools-examples/gh-pages/sourcemaps-in-console/js/main.coffee">See the original CoffeeScript source.</a></li>
-  <li><a href="https://raw.githubusercontent.com/wbamberg/devtools-examples/gh-pages/sourcemaps-in-console/js/main.js">See the compiled JavaScript source.</a></li>
-  <li><a href="https://raw.githubusercontent.com/wbamberg/devtools-examples/gh-pages/sourcemaps-in-console/js/main.js.map">See the source map.</a></li>
+  <li><a href="https://raw.githubusercontent.com/mdn/devtools-examples/gh-pages/sourcemaps-in-console/js/main.coffee">See the original CoffeeScript source.</a></li>
+  <li><a href="https://raw.githubusercontent.com/mdn/devtools-examples/gh-pages/sourcemaps-in-console/js/main.js">See the compiled JavaScript source.</a></li>
+  <li><a href="https://raw.githubusercontent.com/mdn/devtools-examples/gh-pages/sourcemaps-in-console/js/main.js.map">See the source map.</a></li>
 </ul>
-
-<p>The message that appears in the console has a link back to the source file. Without source map support, this will link to the compiled JavaScript source. With source map support, it will link to the original CoffeeScript source.</p>
-
-<p>
-  To try it out:
-  <ul>
-    <li>Make sure you're using Firefox version 50 or higher.</li>
-    <li>Visit "about:config", and check the value of the "devtools.sourcemap.locations.enabled" preference. If it's <code>false</code>, set it to <code>true</code>.</li>
-    <li>Open the Web Console.</li>
-    <li>Type a message in the textbox, and click the "Greet" button.</li>
-  </ul>
-</p>
-
-<p>You should see a message in the Web Console, and the link it contains should be to the original source "main.coffee".</p>
-
 
   <script type="text/javascript" src="js/main.js"></script>
 
