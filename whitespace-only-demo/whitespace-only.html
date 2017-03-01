@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="whitespace-only.css"/>
+  </head>
+
+  <body>
+
+    <img class="logo" src="Firefox-Developer-Edition.png"/>
+    <img class="logo" src="Firefox-Developer-Edition.png"/>
+    
+    <p>This page demonstrates how the Firefox Developer Tools display whitespace-only text nodes.</p>
+
+    <p>The page includes two images, that are specified using markup like this:</p>
+
+    <pre><code>&lt;img style="width: 400px;" src="Firefox-Developer-Edition.png"/&gt;
+&lt;img style="width: 400px;" src="Firefox-Developer-Edition.png"/&gt;
+    </code></pre>
+
+    <p>Because there is a line break between the two <code>&lt;img/&gt;</code> tags, the browser generates a text node, which is seen as a space between the two images.</p>
+
+    <p>If you <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Select_an_element#With_the_context_menu">examine the page using the Page Inspector</a>, you'll see the text node in the markup view. It looks like a grey circle:</p>
+
+    <p><img class="centred screenshot" src="Inspector-Screenshot.png"/></p>
+
+    <p>To learn more about how the Inspector displays whitespace-only text nodes, <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_and_edit_HTML#Whitespace-only_text_nodes">see the docs on MDN</a>.
+
+  </body>
+
+</html>
